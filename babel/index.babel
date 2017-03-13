@@ -1,0 +1,16 @@
+function tick() {
+  const element = (
+    <div className="Container">
+      <div className="Block">
+        <h1 className="left-text">The Clock is ticking</h1>
+      <h2 className="item-block">{new Date().toLocaleTimeString()}</h2>
+      </div>
+    </div>
+  );
+  ReactDOM.render(
+    element,
+    document.getElementById('root')
+  );
+}
+
+setInterval(tick, 1000);
